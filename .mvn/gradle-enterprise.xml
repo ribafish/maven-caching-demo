@@ -1,0 +1,23 @@
+<gradleEnterprise>
+    <server>
+        <url>https://ec2-3-237-201-221.compute-1.amazonaws.com/</url>
+        <allowUntrusted>true</allowUntrusted>
+    </server>
+    <buildScan>
+        <publish>ALWAYS</publish>
+        <backgroundBuildScanUpload>#{env['CI'] == null}</backgroundBuildScanUpload>
+        <capture>                                           <!-- For extension >= 1.11 -->
+            <goalInputFiles>true</goalInputFiles>
+        </capture>
+    </buildScan>
+    <buildCache>
+        <local>
+            <enabled>false</enabled>
+            <storeEnabled>false</storeEnabled>
+        </local>
+        <remote>
+            <enabled>false</enabled>
+            <storeEnabled>false</storeEnabled>
+        </remote>
+    </buildCache>
+</gradleEnterprise>
