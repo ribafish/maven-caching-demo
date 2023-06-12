@@ -16,8 +16,8 @@
             <directory>build-cache</directory>
         </local>
         <remote>
-            <enabled>false</enabled>
-            <storeEnabled>false</storeEnabled>
+            <enabled>true</enabled>
+            <storeEnabled>true</storeEnabled>
         </remote>
     </buildCache>
 </gradleEnterprise>
