@@ -9,22 +9,15 @@
         <capture>                                           <!-- For extension >= 1.11 -->
             <goalInputFiles>true</goalInputFiles>
         </capture>
-        <values>
-            <value>
-                <name>Build number</name>
-                <value>${project.buildNumber}</value>
-            </value>
-        </values>
     </buildScan>
     <buildCache>
         <local>
             <enabled>false</enabled>
-            <storeEnabled>true</storeEnabled>
             <directory>build-cache</directory>
         </local>
         <remote>
-            <enabled>true</enabled>
-            <storeEnabled>true</storeEnabled>
+            <enabled>false</enabled>
+            <storeEnabled>false</storeEnabled>
         </remote>
     </buildCache>
 </gradleEnterprise>
