@@ -17,7 +17,7 @@
         </local>
         <remote>
             <enabled>true</enabled>
-            <storeEnabled>true</storeEnabled>
+            <storeEnabled>#{env['CI'] != null}</storeEnabled>
         </remote>
     </buildCache>
 </gradleEnterprise>
