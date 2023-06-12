@@ -6,17 +6,17 @@
     <buildScan>
         <publish>ALWAYS</publish>
         <backgroundBuildScanUpload>#{env['CI'] == null}</backgroundBuildScanUpload>
-        <capture>                                           <!-- For extension >= 1.11 -->
+        <capture>
             <goalInputFiles>true</goalInputFiles>
         </capture>
     </buildScan>
     <buildCache>
         <local>
             <enabled>false</enabled>
-            <directory>build-cache</directory>
+            <directory>build-cache</directory> <!-- Demo purposes only -->
         </local>
         <remote>
-            <enabled>true</enabled>
+            <enabled>false</enabled>
             <storeEnabled>#{env['CI'] != null}</storeEnabled>
         </remote>
     </buildCache>
