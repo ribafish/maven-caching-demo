@@ -13,7 +13,6 @@
     <buildCache>
         <local>
             <enabled>false</enabled>
-            <directory>build-cache</directory> <!-- Demo purposes only -->
         </local>
         <remote>
             <enabled>false</enabled>
