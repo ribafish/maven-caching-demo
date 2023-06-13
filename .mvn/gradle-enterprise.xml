@@ -15,7 +15,7 @@
             <enabled>false</enabled>
         </local>
         <remote>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
             <storeEnabled>#{env['CI'] != null}</storeEnabled>
         </remote>
     </buildCache>
